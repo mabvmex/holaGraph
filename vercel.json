@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "builds":[
+    "builds": [
         {
             "src":"build/server.js",
             "use":"@vercel/node",
@@ -9,7 +9,6 @@
                     "build/schema/**/*.graphql"
                 ]
             }
-
         }
     ],
     "routes":[
@@ -17,6 +16,5 @@
             "src":"/(.*)",
             "dest":"build/server.js"
         }
-    ]
-    
+    ]  
 }
